@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/button1"
+        android:layout_width="112dp"
+        android:layout_height="94dp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginEnd="11dp"
+        android:src="@color/grey"
+        />
+    
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="25sp"
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintEnd_toEndOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/button1"
+        app:layout_constraintBottom_toBottomOf="@id/button1"
+        android:src="@drawable/vector"
+        />
+
+    <ImageView
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:src="@color/grey"
+        />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="25sp"
+        app:layout_constraintStart_toStartOf="@id/button2"
+        app:layout_constraintEnd_toEndOf="@id/button2"
+        app:layout_constraintTop_toTopOf="@id/button2"
+        app:layout_constraintBottom_toBottomOf="@id/button1"
+        android:src="@drawable/vectorr"
+        />
+
+
+    <ImageView
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginStart="8dp"
+        android:src="@color/grey"
+        />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="25sp"
+        app:layout_constraintStart_toStartOf="@id/button3"
+        app:layout_constraintEnd_toEndOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@id/button3"
+        app:layout_constraintBottom_toBottomOf="@id/button1"
+        android:src="@drawable/vectorrr"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/go_over"
+        android:text="312"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/go_over"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Перейти"
+        android:textColor="@color/white"
+        android:background="@color/pink"
+        android:layout_marginBottom="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
